@@ -50,4 +50,33 @@ abline(HEADLENmodel)
 summary.lm(HEADLENmodel)
 ```
 
+## Model LENGTH ~ CHEST  this is an example   
 
+```{r}
+CHESTmodel <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(CHESTmodel)
+summary.lm(CHESTmodel)
+```
+
+
+## Model LENGTH ~ WEIGHT  this is an example   
+
+```{r}
+WEIGHTmodel <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(WEIGHTmodel)
+summary.lm(WEIGHTmodel)
+```
+## Model LENGTH ~ HEADWTH  this is an example   
+
+```{r}
+HEADWTHmodel <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(HEADWTHmodel)
+summary.lm(HEADWTHmodel)
+```
+
+CONCLUSION 
+
+the largest Adjusted R-squared is 0.8434 with length~head being the strongest one. 
